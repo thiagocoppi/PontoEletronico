@@ -10,9 +10,8 @@ public class PasswordUtils {
     public PasswordUtils(){}
 
     public static String gerarBCrypt(String senha){
-        if(senha.isEmpty()){
-            return senha;
-        }
+        if(senha == null)
+            return null;
         log.info("Gerando hash");
         BCryptPasswordEncoder bCrypt = new BCryptPasswordEncoder();
         return bCrypt.encode(senha);
