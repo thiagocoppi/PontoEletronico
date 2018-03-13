@@ -32,7 +32,7 @@ public class CadastroPJController {
 
     public CadastroPJController(){}
 
-    @RequestMapping(method = RequestMethod.POST)
+    @RequestMapping(path = "/PJ",method = RequestMethod.POST)
     public ResponseEntity<Response<CadastroPJDto>> cadastrar(@Valid @RequestBody CadastroPJDto cadastroPJDto, BindingResult bindingResult) throws NoSuchAlgorithmException{
         log.info("Cadastrando PJ : {}",cadastroPJDto);
 
