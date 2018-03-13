@@ -1,5 +1,6 @@
 package com.study.ponto.api.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.study.ponto.api.enums.PerfilEnum;
 
 import javax.persistence.*;
@@ -134,6 +135,7 @@ public class Funcionario implements Serializable{
         this.dataAtualizacao = dataAtualizacao;
     }
 
+    @JsonIgnore
     @ManyToOne(fetch = FetchType.EAGER)
     public Empresa getEmpresa() {
         return empresa;
