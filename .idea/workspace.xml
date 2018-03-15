@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="907ed0c9-b65a-495d-8349-a48af9f3cab4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/ponto/controller/FuncionarioController.class" afterPath="$PROJECT_DIR$/target/classes/com/study/ponto/controller/FuncionarioController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/ponto/dtos/FuncionarioDto.class" afterPath="$PROJECT_DIR$/target/classes/com/study/ponto/dtos/FuncionarioDto.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/ponto/services/FuncionarioService.class" afterPath="$PROJECT_DIR$/target/classes/com/study/ponto/services/FuncionarioService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/ponto/services/implement/FuncionarioServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/study/ponto/services/implement/FuncionarioServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/study/ponto/repositories/FuncionarioRepositoryTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/study/ponto/repositories/FuncionarioRepositoryTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ponto.iml" afterPath="$PROJECT_DIR$/ponto.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/study/ponto/api/entities/Funcionario.java" afterPath="$PROJECT_DIR$/src/main/java/com/study/ponto/api/entities/Funcionario.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/study/ponto/controller/FuncionarioController.java" afterPath="$PROJECT_DIR$/src/main/java/com/study/ponto/controller/FuncionarioController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/study/ponto/dtos/FuncionarioDto.java" afterPath="$PROJECT_DIR$/src/main/java/com/study/ponto/dtos/FuncionarioDto.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/study/ponto/services/FuncionarioService.java" afterPath="$PROJECT_DIR$/src/main/java/com/study/ponto/services/FuncionarioService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/study/ponto/services/LancamentoService.java" afterPath="$PROJECT_DIR$/src/main/java/com/study/ponto/services/LancamentoService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/study/ponto/services/implement/FuncionarioServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/study/ponto/services/implement/FuncionarioServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/study/ponto/services/implement/LancamentoServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/study/ponto/services/implement/LancamentoServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application-dev.properties" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/study/ponto/repositories/FuncionarioRepositoryTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/study/ponto/repositories/FuncionarioRepositoryTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/study/ponto/repositories/LancamentoRepositoryTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/study/ponto/repositories/LancamentoRepositoryTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/application-dev.properties" afterPath="$PROJECT_DIR$/target/classes/application-dev.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,10 +14,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LancamentoController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LancamentoController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/study/ponto/controller/LancamentoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-373">
+            <state relative-caret-position="-1648">
               <caret line="34" column="35" lean-forward="false" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -106,6 +88,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Lancamento.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/study/ponto/api/entities/Lancamento.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -115,16 +107,6 @@
                 <element signature="e#2143#2144#0" expanded="true" />
                 <element signature="e#2177#2178#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LancamentoRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/study/ponto/repository/LancamentoRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="22" column="17" lean-forward="false" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -207,7 +189,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/study/ponto/service/LancamentoServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/study/ponto/response/Response.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/study/ponto/dtos/CadastroPJDto.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/study/ponto/PontoApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/study/ponto/controller/CadastroPJController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/study/ponto/dtos/CadastroPFDto.java" />
@@ -228,6 +209,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/study/ponto/services/implement/LancamentoServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/study/ponto/controller/LancamentoController.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/study/ponto/repositories/LancamentoRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -1123,13 +1105,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1269,11 +1244,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/study/ponto/controller/LancamentoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-373">
+        <state relative-caret-position="-1648">
           <caret line="34" column="35" lean-forward="false" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
