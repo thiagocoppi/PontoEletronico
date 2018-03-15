@@ -42,7 +42,6 @@ public class LancamentoRepositoryTest {
     private EmpresaRepository empresaRepository;
 
     private Long funcionarioId;
-    private SimpleDateFormat simpleDateFormat = new SimpleDateFormat("YYYY/mm/DD HH:MM");
 
     @Before
     public void setUp() throws Exception{
@@ -98,6 +97,7 @@ public class LancamentoRepositoryTest {
 
     private Lancamento obterDadosLancamentos(Funcionario funcionario){
         Lancamento lancamento = new Lancamento();
+        lancamento.setData(new Date());
         lancamento.setTipo(TipoEnum.TERMINO_ALMOCO);
         lancamento.setFuncionario(funcionario);
         lancamento.setDescricao("Lançamento de Teste");
