@@ -8,6 +8,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 @Service
 public class LancamentoServiceImpl implements LancamentoService {
@@ -17,6 +18,11 @@ public class LancamentoServiceImpl implements LancamentoService {
     @Override
     public Page<Lancamento> findFuncionarioById(long id, PageRequest pageable) {
         return this.lancamentoRepository.findFuncionarioById(id,pageable);
+    }
+
+    @Override
+    public List<Lancamento> findFuncionarioById(long id) {
+        return this.lancamentoRepository.findFuncionarioById(id);
     }
 
     @Override

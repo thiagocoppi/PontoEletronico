@@ -3,6 +3,7 @@ package com.study.ponto.repositories;
 import com.study.ponto.api.entities.Empresa;
 import com.study.ponto.api.entities.Funcionario;
 import com.study.ponto.api.enums.PerfilEnum;
+import com.study.ponto.dtos.FuncionarioDto;
 import com.study.ponto.repository.EmpresaRepository;
 import com.study.ponto.repository.FuncionarioRepository;
 import com.study.ponto.utils.PasswordUtils;
@@ -31,11 +32,32 @@ public class FuncionarioRepositoryTest {
 
     private static final String EMAIL = "email@teste.com";
     private static final String CPF = "36288413569";
+    private static final Funcionario funcionario = new Funcionario();
+    private static final FuncionarioDto funcionarioDTO = new FuncionarioDto();
+
 
     @Before
     public void setUp() throws Exception{
         Empresa empresa = this.empresaRepository.save(obterDadosEmpresa());
         this.funcionarioRepository.save(obterDadosFuncionario(empresa));
+        funcionario.setId(1L);
+        funcionario.setEmail(EMAIL);
+        funcionario.setCpf(CPF);
+        funcionario.setPerfil(PerfilEnum.ROLE_USUARIO);
+        funcionario.setSenha(PasswordUtils.gerarBCrypt("12345678"));
+        funcionario.setQtdHorasAlmoco(1.0F);
+        funcionario.setQtdHorasTrabalhoDia(2.0F);
+        funcionario.setValorHora(new BigDecimal("2.5"));
+        funcionario.setNome("Testei Aro 16");
+
+        funcionarioDTO.setCPF(CPF);
+        funcionarioDTO.setEmail(EMAIL);
+    }
+    @Test
+    public void testAtualizarFuncionario(){
+        funcionarioDTO.setNome("Teste Update");
+        funcionario.setNome(funcionarioDTO.getNome());
+        Assert.assertEquals(funcionario.getNome(),funcionarioDTO.getNome());
     }
 
     @After
@@ -77,6 +99,10 @@ public class FuncionarioRepositoryTest {
     public void testBuscarCpfEEmailInvalido(){
         Funcionario func = this.funcionarioRepository.findByCpfOrEmail("123156","teste@invalido.com");
         Assert.assertNull(func);
+    }
+
+    public void testeConverterDTOFuncionario(){
+
     }
 
     private Funcionario obterDadosFuncionario(Empresa empresa) throws NoSuchAlgorithmException {

@@ -1,5 +1,6 @@
 package com.study.ponto.dtos;
 
+import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.br.CPF;
 
 import javax.validation.constraints.Email;
@@ -12,7 +13,7 @@ public class FuncionarioDto {
     private String email;
     private String CPF;
     private String nome;
-    private Optional<String> senha = Optional.empty();
+    private String senha;
     private Optional<BigDecimal> valorHora = Optional.empty();
     private Optional<Float> qtdHorasTrabalho = Optional.empty();
     private Optional<Float> qtdHorasAlmoco = Optional.empty();
@@ -45,7 +46,7 @@ public class FuncionarioDto {
     public void setCPF(String CPF) {
         this.CPF = CPF;
     }
-
+    @NotEmpty(message = "Nome é obrigatório")
     public String getNome() {
         return nome;
     }
@@ -54,11 +55,13 @@ public class FuncionarioDto {
         this.nome = nome;
     }
 
-    public Optional<String> getSenha() {
+    @NotEmpty(message = "É obrigatório informar uma senha")
+    @Length(min = 8, max = 100, message = "A senha deve conter entre 8 à 100 caracteres")
+    public String getSenha() {
         return senha;
     }
 
-    public void setSenha(Optional<String> senha) {
+    public void setSenha(String senha) {
         this.senha = senha;
     }
 

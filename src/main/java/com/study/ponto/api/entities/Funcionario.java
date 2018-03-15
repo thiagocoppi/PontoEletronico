@@ -2,6 +2,7 @@ package com.study.ponto.api.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.study.ponto.api.enums.PerfilEnum;
+import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
 import java.io.Serializable;

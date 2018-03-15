@@ -1,6 +1,7 @@
 package com.study.ponto.services;
 
 import com.study.ponto.api.entities.Funcionario;
+import com.study.ponto.dtos.FuncionarioDto;
 
 import java.util.Optional;
 
@@ -14,4 +15,6 @@ public interface FuncionarioService {
     Optional<Funcionario> findById(long id);
 
     Optional<Funcionario> persistir(Funcionario funcionario);
+
+    Funcionario converterFuncionarioDTO(Funcionario funcionarioDto);
 }

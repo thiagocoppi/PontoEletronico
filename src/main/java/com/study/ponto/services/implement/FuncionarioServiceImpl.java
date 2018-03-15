@@ -1,6 +1,7 @@
 package com.study.ponto.services.implement;
 
 import com.study.ponto.api.entities.Funcionario;
+import com.study.ponto.dtos.FuncionarioDto;
 import com.study.ponto.repository.FuncionarioRepository;
 import com.study.ponto.services.FuncionarioService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,5 +37,23 @@ public class FuncionarioServiceImpl implements FuncionarioService {
     @Override
     public Optional<Funcionario> persistir(Funcionario funcionario) {
         return Optional.ofNullable(this.funcionarioRepository.save(funcionario));
+    }
+
+    @Override
+    public Funcionario converterFuncionarioDTO(Funcionario funcionarioDto) {
+        Funcionario funcionario = new Funcionario();
+        funcionario.setId(funcionarioDto.getId());
+        funcionario.setNome(funcionarioDto.getNome());
+        funcionario.setPerfil(funcionarioDto.getPerfil());
+        funcionario.setEmpresa(funcionarioDto.getEmpresa());
+        funcionario.setSenha(funcionarioDto.getSenha());
+        funcionario.setDataAtualizacao(funcionarioDto.getDataAtualizacao());
+        funcionario.setDataCriacao(funcionarioDto.getDataCriacao());
+        funcionario.setEmail(funcionarioDto.getEmail());
+        funcionario.setCpf(funcionarioDto.getCpf());
+        funcionario.setValorHora(funcionarioDto.getValorHora());
+        funcionario.setQtdHorasAlmoco(funcionarioDto.getQtdHorasAlmoco());
+        funcionario.setQtdHorasTrabalhoDia(funcionarioDto.getQtdHorasTrabalhoDia());
+        return funcionario;
     }
 }
