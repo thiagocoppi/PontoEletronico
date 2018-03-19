@@ -98,6 +98,29 @@ public class LancamentoController {
         return ResponseEntity.ok(response);
     }
 
+    @RequestMapping(path = "/{id}",method = RequestMethod.DELETE)
+    private ResponseEntity<Response<Integer>> remover(@PathVariable(name = "id") long id){
+        Response<Integer> response = new Response<>();
+        response.setData(1);
+        this.lancamentoService.remover(id);
+        return ResponseEntity.ok(response);
+    }
+
+    @RequestMapping(method = RequestMethod.PUT)
+    private ResponseEntity<Response<LancamentoDto>> alterar(@Valid @RequestBody LancamentoDto lctoDTO, BindingResult result) throws ParseException {
+        Response<LancamentoDto> response = new Response<>();
+        this.validarFuncionario(lctoDTO,result);
+        Lancamento lancamento = this.converterDTOParaLancamento(lctoDTO, result);
+
+        if(result.hasErrors()){
+            result.getAllErrors().forEach(erro -> response.getErros().add(erro.getDefaultMessage()));
+            return ResponseEntity.badRequest().body(response);
+        }
+        this.lancamentoService.persistir(lancamento);
+        response.setData(lctoDTO);
+        return ResponseEntity.ok(response);
+    }
+
     private LancamentoDto converterLancamento(Lancamento lancamento){
         LancamentoDto lancamentoDto = new LancamentoDto();
         lancamentoDto.setId(Optional.of(lancamento.getId()));
@@ -124,17 +147,20 @@ public class LancamentoController {
         }
         lancamento.setDescricao(lcto.getDescricao());
         lancamento.setLocalizacao(lcto.getLocalizacao());
-        lancamento.setData(this.dateFormat.parse(lcto.getData()));
+
         List<Lancamento> lancamentoList = this.lancamentoService.findFuncionarioById(lancamento.getFuncionario().getId());
         lancamentoList.forEach(lanc -> {
             try {
                 if(this.dateFormat.parse(lcto.getData()).equals(lanc.getData()) && lanc.getFuncionario().getId().equals(lcto.getFuncionarioId())){
                     result.addError(new ObjectError("Lancamento", "Lançamento encontrado na mesma data/hora para este funcionário"));
+                    return;
                 }
             } catch (ParseException e) {
                 e.printStackTrace();
             }
         });
+
+        lancamento.setData(this.dateFormat.parse(lcto.getData()));
 
         if(EnumUtils.isValidEnum(TipoEnum.class,lcto.getTipo())){
             lancamento.setTipo(TipoEnum.valueOf(lcto.getTipo()));
