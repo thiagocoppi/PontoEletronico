@@ -24,7 +24,7 @@ public class Lancamento implements Serializable{
     public Lancamento(){}
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     public Long getId() {
         return id;
     }
