@@ -4,7 +4,7 @@ import javax.validation.constraints.NotEmpty;
 import java.util.Optional;
 
 public class LancamentoDto {
-    private Optional<Long> id = Optional.empty();
+    private Long id;
     private String data;
     private String tipo;
     private String descricao;
@@ -14,11 +14,11 @@ public class LancamentoDto {
     public LancamentoDto(){}
 
 
-    public Optional<Long> getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Optional<Long> id) {
+    public void setId(Long id) {
         this.id = id;
     }
     @NotEmpty(message = "A data não pode ser vazia!")

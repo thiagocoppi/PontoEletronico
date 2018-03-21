@@ -61,7 +61,7 @@ public class LancamentoController {
     }
 
     @RequestMapping(path = "/{id}", method = RequestMethod.GET)
-    private ResponseEntity<Response<LancamentoDto>> listById(@PathVariable("id")long id){
+    public ResponseEntity<Response<LancamentoDto>> listById(@PathVariable("id")long id){
         log.info("buscando lançamento por id " + String.valueOf(id));
         Response<LancamentoDto> response = new Response<>();
         Optional<Lancamento> lancamento = this.lancamentoService.findById(id);
@@ -77,7 +77,7 @@ public class LancamentoController {
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    private ResponseEntity<Response<LancamentoDto>> adicionar(@Valid @RequestBody LancamentoDto lancamentoDTO, BindingResult result) throws ParseException {
+    public ResponseEntity<Response<LancamentoDto>> adicionar(@Valid @RequestBody LancamentoDto lancamentoDTO, BindingResult result) throws ParseException {
         Response<LancamentoDto> response = new Response<>();
         this.validarFuncionario(lancamentoDTO,result);
         Lancamento lancamento = new Lancamento();
@@ -98,8 +98,9 @@ public class LancamentoController {
         return ResponseEntity.ok(response);
     }
 
+
     @RequestMapping(path = "/{id}",method = RequestMethod.DELETE)
-    private ResponseEntity<Response<Integer>> remover(@PathVariable(name = "id") long id){
+    public ResponseEntity<Response<Integer>> remover(@PathVariable(name = "id") long id){
         Response<Integer> response = new Response<>();
         response.setData(1);
         this.lancamentoService.remover(id);
@@ -107,8 +108,9 @@ public class LancamentoController {
     }
 
     @RequestMapping(method = RequestMethod.PUT)
-    private ResponseEntity<Response<LancamentoDto>> alterar(@Valid @RequestBody LancamentoDto lctoDTO, BindingResult result) throws ParseException {
+    public ResponseEntity<Response<LancamentoDto>> alterar(@Valid @RequestBody LancamentoDto lctoDTO, BindingResult result) throws ParseException {
         Response<LancamentoDto> response = new Response<>();
+        log.info("Alterando um funcionário");
         this.validarFuncionario(lctoDTO,result);
         Lancamento lancamento = this.converterDTOParaLancamento(lctoDTO, result);
 
@@ -123,7 +125,7 @@ public class LancamentoController {
 
     private LancamentoDto converterLancamento(Lancamento lancamento){
         LancamentoDto lancamentoDto = new LancamentoDto();
-        lancamentoDto.setId(Optional.of(lancamento.getId()));
+        lancamentoDto.setId(lancamento.getId());
         lancamentoDto.setData(this.dateFormat.format(lancamento.getData()));
         lancamentoDto.setDescricao(lancamento.getDescricao());
         lancamentoDto.setLocalizacao(lancamento.getDescricao());
@@ -134,8 +136,8 @@ public class LancamentoController {
 
     private Lancamento converterDTOParaLancamento(LancamentoDto lcto, BindingResult result) throws ParseException {
         Lancamento lancamento = new Lancamento();
-        if(lcto.getId().isPresent()){
-            Optional<Lancamento> lanc = this.lancamentoService.findById(lcto.getId().get());
+        if(lcto.getId() != null){
+            Optional<Lancamento> lanc = this.lancamentoService.findById(lcto.getId());
             if(lanc.isPresent()) {
                 lancamento = lanc.get();
             } else {
