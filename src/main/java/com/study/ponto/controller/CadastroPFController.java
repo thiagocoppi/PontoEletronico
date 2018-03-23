@@ -64,9 +64,9 @@ public class CadastroPFController {
         funcionario.setEmail(cadastroPFDto.getEmail());
         funcionario.setCpf(cadastroPFDto.getCpf());
         funcionario.setPerfil(PerfilEnum.ROLE_USUARIO);
-        funcionario.setQtdHorasTrabalhoDia(cadastroPFDto.getQtdHorasTrabalhoDia().get());
-        funcionario.setQtdHorasAlmoco(cadastroPFDto.getQtdHorasAlmoco().get());
-        funcionario.setValorHora(cadastroPFDto.getQtdValorHora().get());
+        funcionario.setQtdHorasTrabalhoDia(cadastroPFDto.getQtdHorasTrabalhoDia());
+        funcionario.setQtdHorasAlmoco(cadastroPFDto.getQtdHorasAlmoco());
+        funcionario.setValorHora(cadastroPFDto.getQtdValorHora());
         funcionario.setEmpresa(empresa);
         return funcionario;
     }

@@ -17,9 +17,9 @@ public class CadastroPFDto {
     private String cpf;
     private String razaoSocial;
     private String cnpj;
-    private Optional<BigDecimal> qtdValorHora = Optional.empty();
-    private Optional<Float> qtdHorasAlmoco = Optional.empty();
-    private Optional<Float> qtdHorasTrabalhoDia = Optional.empty();
+    private BigDecimal qtdValorHora;
+    private Float qtdHorasAlmoco;
+    private Float qtdHorasTrabalhoDia;
 
 
     public Long getId() {
@@ -90,27 +90,27 @@ public class CadastroPFDto {
         this.cnpj = cnpj;
     }
 
-    public Optional<BigDecimal> getQtdValorHora() {
+    public BigDecimal getQtdValorHora() {
         return qtdValorHora;
     }
 
-    public void setQtdValorHora(Optional<BigDecimal> qtdValorHora) {
+    public void setQtdValorHora(BigDecimal qtdValorHora) {
         this.qtdValorHora = qtdValorHora;
     }
 
-    public Optional<Float> getQtdHorasAlmoco() {
+    public Float getQtdHorasAlmoco() {
         return qtdHorasAlmoco;
     }
 
-    public void setQtdHorasAlmoco(Optional<Float> qtdHorasAlmoco) {
+    public void setQtdHorasAlmoco(Float qtdHorasAlmoco) {
         this.qtdHorasAlmoco = qtdHorasAlmoco;
     }
 
-    public Optional<Float> getQtdHorasTrabalhoDia() {
+    public Float getQtdHorasTrabalhoDia() {
         return qtdHorasTrabalhoDia;
     }
 
-    public void setQtdHorasTrabalhoDia(Optional<Float> qtdHorasTrabalhoDia) {
+    public void setQtdHorasTrabalhoDia(Float qtdHorasTrabalhoDia) {
         this.qtdHorasTrabalhoDia = qtdHorasTrabalhoDia;
     }
 
