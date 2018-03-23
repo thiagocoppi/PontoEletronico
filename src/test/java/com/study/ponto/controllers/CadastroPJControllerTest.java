@@ -1,20 +1,17 @@
 package com.study.ponto.controllers;
 
-import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.study.ponto.api.entities.Empresa;
 import com.study.ponto.api.entities.Funcionario;
 import com.study.ponto.api.enums.PerfilEnum;
 import com.study.ponto.dtos.CadastroPFDto;
-import com.study.ponto.dtos.FuncionarioDto;
+import com.study.ponto.dtos.CadastroPJDto;
 import com.study.ponto.services.EmpresaService;
 import com.study.ponto.services.FuncionarioService;
-import com.study.ponto.utils.PasswordUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.BDDMockito;
-import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -24,10 +21,6 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
-
-import java.math.BigDecimal;
-import java.util.Optional;
-
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -35,44 +28,44 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest
 @AutoConfigureMockMvc(secure = false)
 @ActiveProfiles("test")
-public class CadastroPFControllerTest {
+public class CadastroPJControllerTest {
+
+    private static final String RAZAO_SOCIAL = "Testes Unitarios PJ";
+    private static final String CNPJ = "82590349000195";
+    private static final String URL_BASE = "/ponto/api";
     @MockBean
     private EmpresaService empresaService;
-
     @MockBean
     private FuncionarioService funcionarioService;
-
     @Autowired
-    private MockMvc mockMvc;
-
-    private static final String RAZAO_SOCIAL = "Testes Empresa S.a";
-    private static final String CNPJ = "99340692000184";
-    private static final String URL_BASE = "/ponto/api";
-
+    MockMvc mockMvc;
 
     @Test
-    public void cadastrarPFSucessoTest() throws Exception{
+    public void testCadastrarPJSucess() throws Exception{
         Empresa empresa = obterDadosEmpresa();
         BDDMockito.given(this.empresaService.persistirEmpresa(empresa)).willReturn(empresa);
-        CadastroPFDto cadastroPFDto = obterDadosFuncionario(empresa);
-        mockMvc.perform(MockMvcRequestBuilders.post(URL_BASE + "/" + "pf")
+        CadastroPJDto cadastroPJDto = obterDadosFuncionario(empresa);
+        Funcionario funcionario = obterFuncionario(cadastroPJDto,empresa);
+        mockMvc.perform(MockMvcRequestBuilders.post(URL_BASE + "/" + "PJ")
                                                 .contentType(MediaType.APPLICATION_JSON)
-                                                .content(convertFuncionarioToJson(cadastroPFDto)))
+                                                .content(convertDTOToJson(cadastroPJDto)))
                                                 .andExpect(status().isOk())
-                                                .andExpect(jsonPath("$.data.email").value("emaildeteste@gmail.com"))
-                                                .andExpect(jsonPath("$.data.nome").value("Teste Controller PF"));
+                                                .andExpect(jsonPath("$.data.cpf").value("26749425097"))
+                                                .andExpect(jsonPath("$.data.nome").value("Teste Controller PJ"));
     }
 
     @Test
-    public void cadastrarPFFailTest() throws Exception{
+    public void testCadastrarPJFail() throws Exception{
         Empresa empresa = obterDadosEmpresa();
         BDDMockito.given(this.empresaService.persistirEmpresa(empresa)).willReturn(empresa);
-        CadastroPFDto cadastroPFDto = obterDadosFuncionario(empresa);
-        cadastroPFDto.setCpf("6666");
-        mockMvc.perform(MockMvcRequestBuilders.post(URL_BASE + "/" + "pf")
+        CadastroPJDto cadastroPJDto = obterDadosFuncionario(empresa);
+        cadastroPJDto.setCpf("5555");
+        Funcionario funcionario = obterFuncionario(cadastroPJDto,empresa);
+        mockMvc.perform(MockMvcRequestBuilders.post(URL_BASE+"/PJ")
                                                .contentType(MediaType.APPLICATION_JSON)
-                                               .content(convertFuncionarioToJson(cadastroPFDto)))
+                                               .content(convertDTOToJson(cadastroPJDto)))
                                                .andExpect(status().isBadRequest());
+
     }
 
     private Empresa obterDadosEmpresa(){
@@ -82,31 +75,30 @@ public class CadastroPFControllerTest {
         return empresa;
     }
 
-    private CadastroPFDto obterDadosFuncionario(Empresa empresa){
-        CadastroPFDto cadastroPFDto = new CadastroPFDto();
-        cadastroPFDto.setCnpj("88226007000177");
-        cadastroPFDto.setCpf("26749425097");
-        cadastroPFDto.setEmail("emaildeteste@gmail.com");
-        cadastroPFDto.setNome("Teste Controller PF");
-        cadastroPFDto.setRazaoSocial("Razao Social Testadora");
-        cadastroPFDto.setSenha("123456789");
-        return cadastroPFDto;
-    }
-
-    private String convertFuncionarioToJson(CadastroPFDto funcionario) throws JsonProcessingException {
-        ObjectMapper objectMapper = new ObjectMapper();
-        return objectMapper.writeValueAsString(funcionario);
-    }
-
-    private Funcionario obterFuncionario(CadastroPFDto cadastroPFDto, Empresa empresa){
+    private Funcionario obterFuncionario(CadastroPJDto cadastroPJDto, Empresa empresa){
         Funcionario funcionario = new Funcionario();
-        funcionario.setEmail(cadastroPFDto.getEmail());
-        funcionario.setCpf(cadastroPFDto.getCpf());
-        funcionario.setNome(cadastroPFDto.getNome());
-        funcionario.setSenha(cadastroPFDto.getSenha());
-        funcionario.setPerfil(PerfilEnum.ROLE_USUARIO);
+        funcionario.setEmail(cadastroPJDto.getEmail());
+        funcionario.setCpf(cadastroPJDto.getCpf());
+        funcionario.setNome(cadastroPJDto.getNome());
+        funcionario.setSenha(cadastroPJDto.getSenha());
+        funcionario.setPerfil(PerfilEnum.ROLE_ADMIN);
         funcionario.setEmpresa(empresa);
         return funcionario;
     }
 
+    private CadastroPJDto obterDadosFuncionario(Empresa empresa){
+        CadastroPJDto cadastroPJDto = new CadastroPJDto();
+        cadastroPJDto.setCnpj("88226007000177");
+        cadastroPJDto.setCpf("26749425097");
+        cadastroPJDto.setEmail("emaildeteste@gmail.com");
+        cadastroPJDto.setNome("Teste Controller PJ");
+        cadastroPJDto.setRazaoSocial("Razao Social Testadora");
+        cadastroPJDto.setSenha("123456789");
+        return cadastroPJDto;
+    }
+
+    private String convertDTOToJson(CadastroPJDto cadastroPJDto) throws JsonProcessingException {
+        ObjectMapper mapper = new ObjectMapper();
+        return mapper.writeValueAsString(cadastroPJDto);
+    }
 }

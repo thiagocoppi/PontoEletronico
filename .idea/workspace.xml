@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="907ed0c9-b65a-495d-8349-a48af9f3cab4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/study/ponto/controller/CadastroPFController.java" afterPath="$PROJECT_DIR$/src/main/java/com/study/ponto/controller/CadastroPFController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/study/ponto/dtos/CadastroPFDto.java" afterPath="$PROJECT_DIR$/src/main/java/com/study/ponto/dtos/CadastroPFDto.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/study/ponto/controllers/CadastroPFControllerTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/study/ponto/controllers/CadastroPFControllerTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,83 +13,80 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CadastroPFController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/study/ponto/controller/CadastroPFController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InvocableHandlerMethod.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.4.RELEASE/spring-web-5.0.4.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="134" column="5" lean-forward="true" selection-start-line="134" selection-start-column="5" selection-end-line="134" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CadastroPFControllerTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/study/ponto/controllers/CadastroPFControllerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="74" column="40" lean-forward="false" selection-start-line="74" selection-start-column="40" selection-end-line="74" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CadastroPFDto.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/study/ponto/dtos/CadastroPFDto.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1105">
-              <caret line="108" column="16" lean-forward="false" selection-start-line="108" selection-start-column="16" selection-end-line="108" selection-end-column="16" />
-              <folding>
-                <element signature="e#2791#2792#0" expanded="true" />
-                <element signature="e#2853#2854#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FuncionarioService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/study/ponto/services/FuncionarioService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmpresaControllerTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/study/ponto/controllers/EmpresaControllerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="67" column="4" lean-forward="false" selection-start-line="67" selection-start-column="4" selection-end-line="72" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.50096965">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="CadastroPJControllerTest.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/study/ponto/controllers/CadastroPJControllerTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="255">
+                  <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="37" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="FuncionarioServiceTest.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/study/ponto/service/FuncionarioServiceTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="119">
+                  <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="CadastroPJDto.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/study/ponto/dtos/CadastroPJDto.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="68">
+                  <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="EmpresaControllerTest.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/study/ponto/controllers/EmpresaControllerTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="437">
+                  <caret line="67" column="4" lean-forward="false" selection-start-line="67" selection-start-column="4" selection-end-line="72" selection-end-column="5" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="CadastroPFControllerTest.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/study/ponto/controllers/CadastroPFControllerTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="598">
+                  <caret line="69" column="42" lean-forward="false" selection-start-line="69" selection-start-column="42" selection-end-line="69" selection-end-column="42" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="CadastroPJController.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/study/ponto/controller/CadastroPJController.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-17">
+                  <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="34" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -183,6 +179,7 @@
         <option value="$PROJECT_DIR$/src/test/java/com/study/ponto/controllers/FuncionarioControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/study/ponto/dtos/CadastroPFDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/study/ponto/controller/CadastroPFController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/study/ponto/controllers/CadastroPJControllerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/study/ponto/controllers/CadastroPFControllerTest.java" />
       </list>
     </option>
@@ -378,6 +375,24 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ponto" type="462c0819:PsiDirectoryNode" />
+              <item name="repositories" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ponto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Spring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ponto" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ponto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Spring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ponto" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -403,7 +418,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CadastroPFControllerTest">
+  <component name="RunManager" selected="JUnit.CadastroPJControllerTest">
     <configuration name="CadastroPFControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -416,6 +431,31 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.study.ponto.controllers" />
       <option name="MAIN_CLASS_NAME" value="com.study.ponto.controllers.CadastroPFControllerTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="CadastroPJControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.study.ponto.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="ponto" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.study.ponto.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.study.ponto.controllers.CadastroPJControllerTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -468,31 +508,6 @@
       <option name="MAIN_CLASS_NAME" value="com.study.ponto.controllers.LancamentoControllerTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="LancamentoControllerTest.getLancamentoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.study.ponto.controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="ponto" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.study.ponto.controllers" />
-      <option name="MAIN_CLASS_NAME" value="com.study.ponto.controllers.LancamentoControllerTest" />
-      <option name="METHOD_NAME" value="getLancamentoTest" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -607,17 +622,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.EmpresaControllerTest" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.LancamentoControllerTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.LancamentoControllerTest.getLancamentoTest" />
-      <item index="3" class="java.lang.String" itemvalue="Application.PontoApplication" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.CadastroPFControllerTest" />
+      <item index="2" class="java.lang.String" itemvalue="Application.PontoApplication" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CadastroPFControllerTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CadastroPJControllerTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CadastroPFControllerTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.EmpresaControllerTest" />
-        <item index="2" class="java.lang.String" itemvalue="Application.PontoApplication" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.LancamentoControllerTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.LancamentoControllerTest.getLancamentoTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.CadastroPJControllerTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CadastroPFControllerTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.EmpresaControllerTest" />
+        <item index="3" class="java.lang.String" itemvalue="Application.PontoApplication" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.LancamentoControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -635,21 +650,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CadastroPFControllerTest - 2018.03.23 at 11h 21m 14s.xml">
-      <configuration name="CadastroPFControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CadastroPFControllerTest - 2018.03.23 at 11h 23m 33s.xml">
-      <configuration name="CadastroPFControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CadastroPFControllerTest - 2018.03.23 at 11h 25m 12s.xml">
-      <configuration name="CadastroPFControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CadastroPFControllerTest - 2018.03.23 at 11h 25m 47s.xml">
-      <configuration name="CadastroPFControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CadastroPFControllerTest - 2018.03.23 at 11h 28m 30s.xml">
-      <configuration name="CadastroPFControllerTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CadastroPFControllerTest - 2018.03.23 at 14h 09m 06s.xml">
       <configuration name="CadastroPFControllerTest" configurationId="JUnit" />
     </history-entry>
@@ -664,6 +664,21 @@
     </history-entry>
     <history-entry file="CadastroPFControllerTest - 2018.03.23 at 14h 38m 29s.xml">
       <configuration name="CadastroPFControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CadastroPFControllerTest - 2018.03.23 at 15h 56m 28s.xml">
+      <configuration name="CadastroPFControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CadastroPJControllerTest - 2018.03.23 at 14h 57m 59s.xml">
+      <configuration name="CadastroPJControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CadastroPJControllerTest - 2018.03.23 at 15h 02m 20s.xml">
+      <configuration name="CadastroPJControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CadastroPJControllerTest - 2018.03.23 at 15h 04m 01s.xml">
+      <configuration name="CadastroPJControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CadastroPJControllerTest - 2018.03.23 at 16h 17m 47s.xml">
+      <configuration name="CadastroPJControllerTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -699,10 +714,10 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24160346" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24160346" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="FAQ Robot" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20522387" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17537314" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -758,12 +773,6 @@
           <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/study/ponto/controllers/CadastroPFControllerTest.java</url>
-          <line>54</line>
-          <properties />
-          <option name="timeStamp" value="51" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/study/ponto/controller/CadastroPFController.java</url>
           <line>37</line>
           <properties />
@@ -780,24 +789,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.4.RELEASE/spring-webmvc-5.0.4.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="432" column="106" lean-forward="false" selection-start-line="432" selection-start-column="106" selection-end-line="432" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/ponto/services/implement/LancamentoServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" column="65" lean-forward="false" selection-start-line="24" selection-start-column="65" selection-end-line="24" selection-end-column="65" />
-          <folding>
-            <element signature="e#852#853#0" expanded="false" />
-            <element signature="e#924#925#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/study/ponto/dtos/EmpresaDto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -809,13 +800,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-187">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/ponto/dtos/CadastroPJDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1030,14 +1014,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/ponto/controller/CadastroPJController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/study/ponto/services/EmpresaService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1082,14 +1058,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/study/ponto/controllers/EmpresaControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="67" column="4" lean-forward="false" selection-start-line="67" selection-start-column="4" selection-end-line="72" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1163,21 +1131,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/ponto/controller/CadastroPJController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/ponto/dtos/CadastroPJDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/study/ponto/controllers/EmpresaControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="67" column="4" lean-forward="false" selection-start-line="67" selection-start-column="4" selection-end-line="72" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/study/ponto/service/FuncionarioServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/study/ponto/controllers/CadastroPFControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="74" column="40" lean-forward="false" selection-start-line="74" selection-start-column="40" selection-end-line="74" selection-end-column="40" />
+        <state relative-caret-position="598">
+          <caret line="69" column="42" lean-forward="false" selection-start-line="69" selection-start-column="42" selection-end-line="69" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/study/ponto/controllers/CadastroPJControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding />
+        <state relative-caret-position="255">
+          <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
