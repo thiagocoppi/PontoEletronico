@@ -1,13 +1,8 @@
 package com.study.ponto.controllers;
 
 import com.study.ponto.api.entities.Empresa;
-import com.study.ponto.api.entities.Funcionario;
-import com.study.ponto.repository.EmpresaRepository;
 import com.study.ponto.services.EmpresaService;
 import com.study.ponto.services.FuncionarioService;
-import org.junit.After;
-import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.BDDMockito;
