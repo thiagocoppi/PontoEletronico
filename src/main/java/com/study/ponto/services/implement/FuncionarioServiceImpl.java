@@ -7,6 +7,7 @@ import com.study.ponto.services.FuncionarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.io.Console;
 import java.util.Optional;
 
 @Service
@@ -41,6 +42,7 @@ public class FuncionarioServiceImpl implements FuncionarioService {
 
     @Override
     public Funcionario converterFuncionarioDTO(Funcionario funcionarioDto) {
+
         Funcionario funcionario = new Funcionario();
         funcionario.setId(funcionarioDto.getId());
         funcionario.setNome(funcionarioDto.getNome());

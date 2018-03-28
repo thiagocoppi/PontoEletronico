@@ -8,7 +8,6 @@ import com.study.ponto.utils.PasswordUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.repository.query.Param;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.ObjectError;
@@ -74,8 +73,12 @@ public class FuncionarioController {
             this.funcionarioService.findByCpf(funcionarioDto.getCPF()).ifPresent(erro -> result.addError(new ObjectError("cpf", "CPF já cadastrado")));
             funcionario.setCpf(funcionarioDto.getCPF());
         }
-        funcionario.setQtdHorasTrabalhoDia(funcionarioDto.getQtdHorasTrabalho().get());
-        funcionario.setQtdHorasAlmoco(funcionarioDto.getQtdHorasAlmoco().get());
+
+        if(funcionarioDto.getQtdHorasTrabalho().isPresent())
+            funcionario.setQtdHorasTrabalhoDia(funcionarioDto.getQtdHorasTrabalho().get());
+        if(funcionarioDto.getQtdHorasAlmoco().isPresent())
+            funcionario.setQtdHorasAlmoco(funcionarioDto.getQtdHorasAlmoco().get());
+
         funcionario.setSenha(PasswordUtils.gerarBCrypt(funcionarioDto.getSenha()));
         return funcionario;
     }
